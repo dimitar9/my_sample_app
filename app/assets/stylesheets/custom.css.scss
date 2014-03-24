@@ -10,14 +10,18 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+
 /* universal */
 
 html {
   overflow-y: scroll;
+  
 }
 
 body {
   padding-top: 60px;
+  background-image: image-url('/assets/falls.jpg');
+  background-size: cover;
 }
 
 section {
@@ -42,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
@@ -58,6 +63,7 @@ h2 {
 }
 
 p {
+  
   font-size: 1.1em;
   line-height: 1.7em;
 }
@@ -121,6 +127,7 @@ footer {
 
 aside {
   section {
+    
     padding: 10px 0;
     border-top: 1px solid $grayLighter;
     &:first-child {
@@ -231,6 +238,7 @@ input {
 .content {
   display: block;
 }
+
 .timestamp {
   color: $grayLight;
 }
@@ -239,8 +247,18 @@ input {
   margin-right: 10px;
 }
 aside {
+  
   textarea {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+
+
+//hero unit
+.hero-unit {
+
+  background-color: transparent;
+
 }
