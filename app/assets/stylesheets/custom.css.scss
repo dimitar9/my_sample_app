@@ -6,9 +6,10 @@ $grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-bog;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /* universal */
 
 html {
@@ -107,12 +108,13 @@ footer {
 }
 
 /* miscellaneous */
+
 .debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
-  @include box_sizing;  
+  @include box_sizing;
 }
 
 /* sidebar */
@@ -139,6 +141,12 @@ aside {
     }
   }
 }
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
 .stats {
   overflow: auto;
   a {
@@ -167,11 +175,6 @@ aside {
     margin: 1px 1px;
   }
 }
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-
 
 /* forms */
 
@@ -185,6 +188,7 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
 #error_explanation {
   color: #f00;
   ul {
@@ -197,7 +201,6 @@ input {
   @extend .control-group;
   @extend .error;
 }
-
 
 /* Users index */
 
